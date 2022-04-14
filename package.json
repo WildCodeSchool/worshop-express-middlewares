@@ -9,6 +9,7 @@
     "lint": "eslint --quiet --cache --fix .",
     "format": "prettier --write .",
     "test": "jest",
+    "prepare": "husky install",
     "test:watch": "jest --watchAll"
   },
   "repository": {
@@ -42,10 +43,10 @@
     "prettier": "2.6.2"
   },
   "lint-staged": {
-    "*.{json,js,ts,jsx,tsx,html,css}": [
+    "*.{json,js,ts}": [
       "prettier --write"
     ],
-    "*.{js,jsx,ts,tsx}": [
+    "*.{js,ts}": [
       "eslint --quiet --cache --fix"
     ]
   }
