@@ -7,9 +7,10 @@ const items = [
   { id: 2, name: 'item2' },
 ];
 
-app.get('/myCollection', (req, res) => {
-  console.log('handling /myroute');
+app.get('/things', (req, res) => {
+  console.log(toto);
+  console.log('handling GET /things');
   res.send(items);
 });
 
-app.listen(5000, () => console.log('server listening on port 5000'));
+module.exports.app = app;
