@@ -8,7 +8,6 @@ const items = [
 ];
 
 app.get('/things', (req, res) => {
-  console.log(tota);
   console.log('handling GET /things');
   res.send(items);
 });
