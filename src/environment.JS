@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-export function getEnv(varibale) {
+function getEnv(varibale) {
   const value = process.env[varibale];
   if (typeof value === 'undefined') {
     console.warn(`Seems like the variable "${varibale}" is not set in the environment. 

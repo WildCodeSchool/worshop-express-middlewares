@@ -6,7 +6,7 @@ npm i
 ```
 Copy the environment variables : 
 ```
-cp .env.sample .env
+cp .env.example .env
 ```
 
 And then change variables inside `.env` to match your own environment.
@@ -22,7 +22,7 @@ This will start the server and reload it when one source file changes :
 npm run dev
 ```
 
-## Run a production version of the app
+## Run the app in production
 
 ```sh
 npm start
